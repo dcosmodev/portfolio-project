@@ -1,20 +1,29 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact</title>
+    <title>Contato</title>
+
+    <!-- CSS -->
     <link rel="stylesheet" href="styles/style.css" />
-    <script src="script.js"></script>
+
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/998c60ef77.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
   </head>
+
   <body class="container">
     <header class="header">
       <nav class="header__menu">
-        <!-- semantic tag that helps navigate the sites -->
         <a class="header__menu__link" href="index.html">Home</a>
         <a class="header__menu__link" href="about.html">About Me</a>
         <a class="header__menu__link" href="contact.html">Contact</a>
+
         <div>
           <input type="checkbox" class="checkbox" id="chk" />
           <label class="label" for="chk">
@@ -25,16 +34,16 @@
         </div>
       </nav>
     </header>
+
     <div class="titulo">
       <h1 id="titulo">Contato</h1>
       <br />
     </div>
+
     <form>
       <fieldset class="grupo">
         <div class="campo">
-          <label for="nome">
-            <strong>Nome</strong>
-          </label>
+          <label for="nome"><strong>Nome</strong></label>
           <input
             type="text"
             name="nome"
@@ -44,13 +53,12 @@
           />
         </div>
       </fieldset>
+
       <fieldset>
         <div class="campo">
-          <label for="email">
-            <strong>Email</strong>
-          </label>
+          <label for="email"><strong>Email</strong></label>
           <input
-            type="text"
+            type="email"
             name="email"
             id="email"
             placeholder="Digite seu Email"
@@ -58,24 +66,22 @@
           />
         </div>
       </fieldset>
+
       <div class="campo">
         <br />
-        <label>
-          <strong>Mensagem</strong>
-        </label>
+        <label for="mensagem"><strong>Mensagem</strong></label>
         <textarea
-          row="6"
+          rows="6"
           style="width: 29.5em"
           id="mensagem"
-          name="Mensagem"
+          name="mensagem"
         ></textarea>
       </div>
+
       <button class="botao" type="submit">Enviar</button>
     </form>
+
+    <!-- JS (somente uma vez e no final) -->
     <script src="script.js"></script>
-    <script
-      src="https://kit.fontawesome.com/998c60ef77.js"
-      crossorigin="anonymous"
-    ></script>
   </body>
 </html>

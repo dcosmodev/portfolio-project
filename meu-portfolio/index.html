@@ -1,20 +1,29 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
+
+    <!-- CSS -->
     <link rel="stylesheet" href="./styles/style.css" />
-    <script src="script.js"></script>
+
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/998c60ef77.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
   </head>
+
   <body class="container">
     <header class="header">
       <nav class="header__menu">
-        <!-- semantic tag that helps navigate the sites -->
         <a class="header__menu__link" href="index.html">Home</a>
         <a class="header__menu__link" href="about.html">About Me</a>
         <a class="header__menu__link" href="contact.html">Contact</a>
+
         <div>
           <input type="checkbox" class="checkbox" id="chk" />
           <label class="label" for="chk">
@@ -25,56 +34,63 @@
         </div>
       </nav>
     </header>
+
     <main class="presentation">
-      <!-- Parent element-->
       <section class="presentation__content">
-        <!-- Child element-->
         <h1 class="presentation__content__title">
           Oi, eu sou o David! Sejam Bem vindos ao meu Portfólio.
-          <strong class="highlight-title"
-            >Sou um estudante de programação me capacitando para ser um
-            desenvolvedor Full-Stack!</strong
-          >
+          <strong class="highlight-title">
+            Sou um estudante de programação me capacitando para ser um
+            desenvolvedor Full-Stack!
+          </strong>
         </h1>
+
         <p class="presentation__content__text">Vamos conversar?</p>
+
         <div class="presentation__links">
-          <!-- for grouping specific elements -->
           <h2 class="presentation__links__subtitle">Acesse minhas Redes:</h2>
+
           <a
             class="presentation__links__navigation"
             href="https://www.linkedin.com/in/david-cosmo-28b59289/"
             target="_blank"
           >
-            <img src="./assets/linkedin.png" />
+            <img src="./assets/linkedin.png" alt="LinkedIn" />
             LinkedIn
           </a>
+
           <a
             class="presentation__links__navigation"
             href="https://github.com/dcosmodev"
             target="_blank"
           >
-            <img src="./assets/github.png" />
+            <img src="./assets/github.png" alt="GitHub" />
             GitHub
           </a>
+
           <a
             class="presentation__links__navigation"
-            href="https://api.whatsapp.com/send/?phone=55082993744110&text&type=phone_number&app_absent=0"
+            href="https://api.whatsapp.com/send/?phone=55082993744110"
             target="_blank"
           >
-            <img src="./assets/whatsapp (1).png" />
-            Whatsapp
+            <img src="./assets/whatsapp (1).png" alt="WhatsApp" />
+            WhatsApp
           </a>
         </div>
       </section>
+
       <img
         class="presentation__image"
         src="./assets/eu.png"
-        alt="Photo of David Cosmo"
+        alt="Foto de David Cosmo"
       />
     </main>
+
     <footer class="footer">
       <p>Developed by</p>
-      <img src="./assets/eu.png" class="footer__image" alt="GitHub icon" />
+
+      <img src="./assets/eu.png" class="footer__image" alt="Foto de David" />
+
       <a
         class="footer__github"
         href="https://github.com/dcosmodev"
@@ -84,11 +100,7 @@
       </a>
     </footer>
 
+    <!-- JS (AGORA SÓ UMA VEZ E NO FINAL) -->
     <script src="script.js"></script>
-    <script
-      src="https://kit.fontawesome.com/998c60ef77.js"
-      crossorigin="anonymous"
-    ></script>
-    <!-- icons sun and moon -->
   </body>
 </html>
