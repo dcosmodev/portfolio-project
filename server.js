@@ -32,8 +32,8 @@ const transporter = nodemailer.createTransport({
   service: "gmail",
 
   auth: {
-    user: "davidbmx98765@gmail.com",
-    pass: "pkdg uoxf xcqw xglt",
+    user: "",
+    pass: "",
   },
 });
 
@@ -63,9 +63,9 @@ app.post("/contato", (req, res) => {
       // ENVIO EMAIL
       await transporter.sendMail({
 
-        from: "davidbmx98765@gmail.com",
+        from: "",
 
-        to: "davidbmx98765@gmail.com",
+        to: "",
 
         subject: "Novo contato do Portfólio 🚀",
 
